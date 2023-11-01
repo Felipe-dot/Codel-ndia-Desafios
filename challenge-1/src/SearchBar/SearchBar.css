@@ -1,6 +1,10 @@
 .input-container {
     position: relative; 
-    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
     height: 65px;
     flex-shrink: 0;
     border-radius: 5px;
@@ -8,17 +12,14 @@
 }
 
 .input-container i {
-    position: absolute;
-    left: 20px; 
+    position: absolute; 
+    left: 9px; 
     top: 50%; 
     transform: translateY(-50%);
 }
 
 .input-container input {
     color: #F3F5F7;
-    position: absolute;
-    top: 20%;
-    left: 30px;
     padding-left: 30px; 
     width: 90%;
     height: 60%;
@@ -49,7 +50,7 @@
 
 @media (min-width:320px) and (max-width: 480px){
     .input-container  {
-      width: 374px;
+      max-width: 374px;
       height: 40px;
     }
   
