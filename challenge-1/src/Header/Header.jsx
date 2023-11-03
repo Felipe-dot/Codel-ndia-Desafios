@@ -1,7 +1,7 @@
 import SearchBar from "../SearchBar/SearchBar";
 import "./Header.css";
 
-export default function Header() {
+export default function Header({ handleInputChange }) {
   return (
     <>
       <div className="container">
@@ -10,7 +10,7 @@ export default function Header() {
           <a>blog</a>
         </div>
         <div className="search-bar">
-          <SearchBar />
+          <SearchBar handleInputChange={handleInputChange} />
         </div>
       </div>
     </>

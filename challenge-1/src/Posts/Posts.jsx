@@ -1,6 +1,35 @@
 import "./Posts.css";
+import { useEffect, useState } from "react";
+import Fuse from "fuse.js";
 
-export default function Posts({ mockData }) {
+export default function Posts({ mockData, inputValue }) {
+  const [searchResults, setSearchResults] = useState(mockData);
+
+  const options = {
+    keys: ["title"],
+    includeScore: true,
+  };
+
+  const fuse = new Fuse(mockData, options);
+
+  useEffect(() => {
+    const term = inputValue;
+
+    if (inputValue === "") {
+      console.log("branco");
+      setSearchResults(mockData);
+      return;
+    }
+
+    if (term.length > 0) {
+      const results = fuse.search(term);
+      var teste = results.map((e) => e.item);
+      setSearchResults(teste);
+    } else {
+      setSearchResults([]);
+    }
+  }, [inputValue]);
+
   const iconToggle = () => {
     const icon = document.querySelector("#icon");
 
@@ -12,7 +41,7 @@ export default function Posts({ mockData }) {
   return (
     <>
       <div className="posts">
-        {mockData.map((e, idx) => (
+        {searchResults.map((e, idx) => (
           <div className="posts-container" key={idx}>
             <div className="info-container">
               <div className="date">{e.date}</div>

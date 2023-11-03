@@ -1,6 +1,6 @@
 import "./SearchBar.css";
 
-export default function SearchBar() {
+export default function SearchBar({ handleInputChange }) {
   return (
     <>
       <div className="input-container">
@@ -10,7 +10,11 @@ export default function SearchBar() {
             alt="search logo"
           />
         </i>
-        <input type="text" placeholder="Pesquisar no blog" />
+        <input
+          type="text"
+          onChange={handleInputChange}
+          placeholder="Pesquisar no blog"
+        />
       </div>
     </>
   );
