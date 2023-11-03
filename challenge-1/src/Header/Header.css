@@ -1,21 +1,21 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 250px;
-    background: linear-gradient(88deg, #574AE8 0%, #3EA1DB 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(88deg, #574ae8 0%, #3ea1db 100%);
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 900px;
-    width: 100%;
-    flex-shrink: 0;
-    padding-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  width: 100%;
+  flex-shrink: 0;
+  padding-top: 0;
 }
 
 .search-bar {
@@ -24,59 +24,65 @@
 }
 
 a {
-    color: #FFF;
-    font-family: 'Lexend Deca';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    align-self: flex-start;
-    cursor: pointer;
+  color: #fff;
+  font-family: "Lexend Deca";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  align-self: flex-start;
+  cursor: pointer;
 }
-
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .header {
+    transition: ease-in 0.2s;
     max-width: 700px;
   }
 
   .search-bar {
+    transition: ease-in 0.2s;
     max-width: 700px;
   }
 }
 
 @media (min-width: 482px) and (max-width: 767px) {
   .header {
+    transition: ease-in 0.2s;
     max-width: 600px;
   }
 
   .search-bar {
+    transition: ease-in 0.2s;
     max-width: 600px;
   }
 }
 
-
-@media(min-width: 480px) and (max-width: 620px) {
+@media (min-width: 480px) and (max-width: 620px) {
   .header {
+    transition: ease-in 0.2s;
     max-width: 500px;
   }
 
   .search-bar {
+    transition: ease-in 0.2s;
     max-width: 500px;
   }
 }
 
-
-@media (min-width:320px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 479px) {
   .container {
+    transition: ease-in 0.2s;
     height: 200px;
   }
 
   .search-bar {
+    transition: ease-in 0.2s;
     max-width: 354px;
   }
 
   .header {
+    transition: ease-in 0.2s;
     max-width: 354px;
   }
 
@@ -85,25 +91,29 @@ a {
   }
 }
 
-@media (min-width:360px) and (max-width: 390px) {
+@media (min-width: 360px) and (max-width: 390px) {
   .header {
+    transition: ease-in 0.2s;
     max-width: 300px;
   }
 
   .search-bar {
+    transition: ease-in 0.2s;
     max-width: 300px;
   }
 }
 
-@media screen and (max-width: 280px){
-  .header  {
-      max-width: 250px;
-    }
-    .search-bar {
-      max-width: 250px;
-    }
+@media (min-width: 280px) and (max-width: 359px) {
+  .header {
+    transition: ease-in 0.2s;
+    max-width: 250px;
+  }
+  .search-bar {
+    transition: ease-in 0.2s;
+    max-width: 250px;
+  }
 
-    a {
-      font-size: 20px;
-    }
+  a {
+    font-size: 20px;
+  }
 }

@@ -1,68 +1,70 @@
 .input-container {
-    position: relative; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 900px;
-    height: 65px;
-    flex-shrink: 0;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.20);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 65px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .input-container i {
-    position: absolute; 
-    left: 9px; 
-    top: 50%; 
-    transform: translateY(-50%);
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .input-container input {
-    color: #F3F5F7;
-    padding-left: 30px; 
-    width: 90%;
-    height: 60%;
-    background-color: transparent;
-    border: none;
-    font-size: 18px;
+  color: #f3f5f7;
+  padding-left: 30px;
+  width: 90%;
+  height: 60%;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
 }
 
 .input-container input::placeholder {
-    color: #fff;
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    opacity: 0.5;
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.5;
 }
 
 .input-container input:focus {
-    outline: none;
+  outline: none;
 }
 
-
-@media (min-width: 482px) and (max-width: 767px) { 
-
-}
-
-
-@media (min-width:320px) and (max-width: 480px){
-    .input-container  {
-      max-width: 374px;
-      height: 40px;
-    }
-  
-    .input-container i {
-        position: absolute;
-        left: 15px; 
-        top: 50%; 
-        transform: translateY(-50%);
-    }
-
-    .input-container i > img {
-        height: 25px;
-        width: 25px;
-    }
+@media (min-width: 320px) and (max-width: 479px) {
+  .input-container {
+    transition: ease-in 0.2s;
+    max-width: 374px;
+    height: 40px;
   }
+
+  .input-container i > img {
+    transition: ease-in 0.2s;
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 359px) {
+  .input-container {
+    transition: ease-in 0.2s;
+    height: 60px;
+  }
+  .input-container i > img {
+    transition: ease-in 0.2s;
+    height: 25px;
+    width: 25px;
+  }
+}
