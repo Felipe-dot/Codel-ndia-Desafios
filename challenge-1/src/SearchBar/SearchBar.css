@@ -10,6 +10,7 @@
   flex-shrink: 0;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.2);
+  transition: ease-in 0.2s;
 }
 
 .input-container i {
@@ -43,15 +44,17 @@
   outline: none;
 }
 
+.input-container i > img {
+  transition: ease-in 0.2s;
+}
+
 @media (min-width: 320px) and (max-width: 479px) {
   .input-container {
-    transition: ease-in 0.2s;
     max-width: 374px;
     height: 40px;
   }
 
   .input-container i > img {
-    transition: ease-in 0.2s;
     height: 25px;
     width: 25px;
   }
@@ -59,11 +62,9 @@
 
 @media (min-width: 280px) and (max-width: 359px) {
   .input-container {
-    transition: ease-in 0.2s;
     height: 60px;
   }
   .input-container i > img {
-    transition: ease-in 0.2s;
     height: 25px;
     width: 25px;
   }
