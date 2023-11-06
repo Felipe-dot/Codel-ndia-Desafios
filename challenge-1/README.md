@@ -45,7 +45,7 @@ Você precisa ter o <strong>Node.js</strong> instalado na sua máquina. Senão t
 Depois você vai instalar o Yarn, uma versão alternativa ao npm, Instala-se ele usando esse comando 
 ```npm install --global yarn```
 Com o Node e Yarn instalado na máquina, vc precisa apenas de 2 comandos (no terminal) na pasta do projeto, nessa ordem:
-1. `yarn add` -> Para instalar as dependências do projeto. (só precisa ser executado uma vez)<br>
+1. `yarn` -> Para instalar as dependências do projeto. (só precisa ser executado uma vez)<br>
 2. `yarn dev` -> Para iniciar o servidor local (para acessar o projeto via navegador, digite na barra de endereço o endereço que aparecerá no terminal)<br>
 
 
