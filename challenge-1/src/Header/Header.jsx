@@ -6,8 +6,8 @@ export default function Header({ handleInputChange }) {
     <>
       <div className="container">
         <div className="header">
-          <a>Codelândia</a>
-          <a>blog</a>
+          <a href="">Codelândia</a>
+          <a href="">blog</a>
         </div>
         <div className="search-bar">
           <SearchBar handleInputChange={handleInputChange} />

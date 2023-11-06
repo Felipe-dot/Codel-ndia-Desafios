@@ -20,7 +20,7 @@ export default function Post({ id, date, title, content, iconToggle }) {
           </svg>
         </div>
         <h2 className="title">{title}</h2>
-        <h4 className="content">{content}</h4>
+        <h3 className="content">{content}</h3>
       </div>
     </>
   );
