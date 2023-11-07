@@ -22,7 +22,17 @@ export default function Main() {
           </div>
         </div>
         <div className="content-right">
-          <img src="src/assets/image.svg" alt="fantasmas do chichiro " />
+          {/* <img src="src/assets/image.svg" alt="fantasmas do chichiro " /> */}
+          <img
+            src="src/assets/ghost1.svg"
+            alt="fantasmas do chichiro 1"
+            id="ghost1"
+          />
+          <img
+            src="src/assets/ghost2.svg"
+            alt="fantasmas do chichiro 2"
+            id="ghost2"
+          />
         </div>
       </div>
     </>

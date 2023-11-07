@@ -43,8 +43,47 @@ h4 {
   font-weight: 400;
   line-height: 180%;
 }
+
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
 .content-right > img {
   max-width: 500px;
+}
+
+/* Animações do fantasma */
+@keyframes moveUpAndDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes moveLeftAndRight {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+}
+
+#ghost1 {
+  position: relative;
+  animation: moveUpAndDown 2s ease-in-out infinite;
+}
+
+#ghost2 {
+  position: relative;
+  right: 100px;
+  animation: moveLeftAndRight 2s ease-in-out infinite;
 }
 
 .buttons {
