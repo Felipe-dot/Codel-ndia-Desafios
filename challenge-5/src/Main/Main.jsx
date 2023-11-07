@@ -13,10 +13,8 @@ export default function Main() {
           </h4>
           <div className="buttons">
             <button>
-              <p>
-                <img src="src/assets/play.svg" alt="butão de reproduzir" />
-                ASSISTIR AGORA
-              </p>
+              <img src="src/assets/play.svg" alt="butão de reproduzir" />
+              <p>ASSISTIR AGORA</p>
             </button>
             <button>
               <p>ASSITA O TRAILER</p>

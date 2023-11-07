@@ -77,6 +77,10 @@ p {
   font-weight: 600;
 }
 
+button > img {
+  transform: skew(24deg);
+}
+
 button > p > img {
   width: 20px;
   height: 20px;
