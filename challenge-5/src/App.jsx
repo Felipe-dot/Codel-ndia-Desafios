@@ -1,7 +1,11 @@
+import Header from "./Header/Header";
+import Main from "./Main/Main";
+
 function App() {
   return (
     <>
-      <h1>oi</h1>
+      <Header />
+      <Main />
     </>
   );
 }
