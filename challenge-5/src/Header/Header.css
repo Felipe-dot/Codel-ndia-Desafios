@@ -25,3 +25,58 @@
 .social-medias > img {
   cursor: pointer;
 }
+
+/* For typical mobile devices */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .header {
+    max-width: 440px;
+    padding: 0 25px 0 25px;
+  }
+
+  .header > img {
+    width: 100px;
+    height: 48.114px;
+  }
+
+  .social-medias {
+    max-width: 200px;
+  }
+
+  .social-medias > img {
+    background-color: black;
+  }
+}
+
+/* For mobile (landscap e) */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .social-medias > img {
+    background-color: blue;
+  }
+}
+
+/* For tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  .social-medias > img {
+    background-color: red;
+  }
+}
+
+/* For small desktop */
+
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+  .social-medias > img {
+    background-color: yellow;
+  }
+}
+
+/* For typical desktop */
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+}
+
+/* For large desktop */
+
+@media only screen and (min-width: 1200px) {
+}

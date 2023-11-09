@@ -133,3 +133,70 @@ button > p > img {
   height: 20px;
   flex-shrink: 0;
 }
+
+/* For typical mobile devices */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 400px;
+    padding: 0 25px 0 25px;
+    height: 550px;
+  }
+
+  #ghost1 {
+    max-width: 200px;
+    max-height: 220px;
+  }
+
+  #ghost2 {
+    right: 30px;
+    max-width: 200px;
+    max-height: 220px;
+  }
+
+  .content-left {
+    align-items: flex-start;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  .buttons button:nth-child(2) {
+    display: none;
+  }
+}
+
+/* For mobile (landscap e) */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+/* For tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+}
+
+/* For small desktop */
+
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+}
+
+/* For typical desktop */
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+}
+
+/* For large desktop */
+
+@media only screen and (min-width: 1200px) {
+}
