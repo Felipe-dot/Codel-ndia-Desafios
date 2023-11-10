@@ -14,7 +14,7 @@ export default function Main() {
             </h4>
             <div className="buttons">
               <button>
-                <img src="src/assets/play.svg" alt="botão de reproduzir" />
+                <img src="/assets/play.svg" alt="botão de reproduzir" />
                 <p>ASSISTIR AGORA</p>
               </button>
               <button>
@@ -25,12 +25,12 @@ export default function Main() {
           <div className="content-right">
             {/* <img src="src/assets/image.svg" alt="fantasmas do chichiro " /> */}
             <img
-              src="src/assets/ghost1.svg"
+              src="/assets/ghost1.svg"
               alt="fantasmas do chichiro 1"
               id="ghost1"
             />
             <img
-              src="src/assets/ghost2.svg"
+              src="/assets/ghost2.svg"
               alt="fantasmas do chichiro 2"
               id="ghost2"
             />
