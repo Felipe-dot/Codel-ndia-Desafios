@@ -41,42 +41,67 @@
   .social-medias {
     max-width: 200px;
   }
-
-  .social-medias > img {
-    background-color: black;
-  }
 }
 
 /* For mobile (landscap e) */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .social-medias > img {
-    background-color: blue;
+  .header {
+    max-width: 440px;
+    padding: 0 25px 0 25px;
+  }
+
+  .header > img {
+    width: 100px;
+    height: 48.114px;
+  }
+
+  .social-medias {
+    max-width: 200px;
   }
 }
 
 /* For tablet */
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
-  .social-medias > img {
-    background-color: red;
+  .header {
+    max-width: 700px;
+    padding: 0 25px 0 25px;
+  }
+
+  .header > img {
+    width: 100px;
+    height: 48.114px;
+  }
+
+  .social-medias {
+    max-width: 200px;
   }
 }
 
 /* For small desktop */
 
 @media only screen and (min-width: 980px) and (max-width: 1023px) {
-  .social-medias > img {
-    background-color: yellow;
+  .header {
+    max-width: 900px;
+    padding: 0 25px 0 25px;
   }
 }
 
 /* For typical desktop */
 
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .header {
+    max-width: 1000px;
+    padding: 0 25px 0 25px;
+  }
 }
 
 /* For large desktop */
 
 @media only screen and (min-width: 1200px) {
+  .header {
+    max-width: 1200px;
+    padding: 0 25px 0 25px;
+  }
 }

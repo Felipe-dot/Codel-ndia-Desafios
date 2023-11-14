@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 600px;
+  height: initial;
   width: 100%;
   max-width: 1600px;
 }
@@ -100,7 +100,7 @@ h4 {
 
 .buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 button {
@@ -141,22 +141,20 @@ button > p > img {
 /* For typical mobile devices */
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .main {
-    display: flex;
     flex-direction: column-reverse;
     max-width: 400px;
     padding: 0 25px 0 25px;
     height: 550px;
   }
 
-  #ghost1 {
+  #ghost1,
+  #ghost2 {
     max-width: 200px;
     max-height: 220px;
   }
 
   #ghost2 {
     right: 30px;
-    max-width: 200px;
-    max-height: 220px;
   }
 
   .content-left {
@@ -168,11 +166,15 @@ button > p > img {
   }
 
   h1 {
-    font-size: 56px;
+    font-size: 46px;
   }
 
   h4 {
     font-size: 14px;
+  }
+
+  p {
+    font-size: 16px;
   }
 
   .buttons button:nth-child(2) {
@@ -180,27 +182,174 @@ button > p > img {
   }
 }
 
-/* For mobile (landscap e) */
+/* For mobile (landscape) */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  .main {
+    flex-direction: column-reverse;
+    max-width: 440px;
+    height: 540px;
+    padding: 0 25px 0 25px;
+  }
+
+  #ghost1,
+  #ghost2 {
+    max-width: 200px;
+    max-height: 220px;
+  }
+
+  #ghost2 {
+    right: 30px;
+  }
+
+  .content-left {
+    align-items: flex-start;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .buttons button:nth-child(2) {
+    display: none;
+  }
 }
 
 /* For tablet */
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
+  .main {
+    flex-direction: column-reverse;
+    max-width: 700px;
+    padding: 0 25px 0 25px;
+    height: 600px;
+  }
+
+  .content-left {
+    max-width: 700px;
+  }
+
+  #ghost1,
+  #ghost2 {
+    max-width: 300px;
+    max-height: 320px;
+  }
+
+  #ghost2 {
+    right: 30px;
+  }
+  .buttons {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 18px;
+  }
 }
 
 /* For small desktop */
 
 @media only screen and (min-width: 980px) and (max-width: 1023px) {
+  .main {
+    max-width: 900px;
+    padding: 0 25px 0 25px;
+  }
+
+  .buttons {
+    width: 100%;
+    max-width: 440px;
+  }
+
+  .content-left {
+    max-width: 800px;
+  }
+
+  #ghost1,
+  #ghost2 {
+    max-width: 300px;
+    max-height: 280px;
+  }
+
+  #ghost2 {
+    right: 30px;
+  }
 }
 
 /* For typical desktop */
 
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .main {
+    max-width: 1000px;
+    padding: 0 25px 0 25px;
+  }
+
+  .content-left {
+    max-width: 900px;
+  }
+
+  #ghost1,
+  #ghost2 {
+    max-width: 300px;
+    max-height: 320px;
+  }
+  #ghost2 {
+    right: 30px;
+  }
+
+  .buttons {
+    width: 100%;
+    max-width: 440px;
+  }
 }
 
 /* For large desktop */
 
 @media only screen and (min-width: 1200px) {
+  .main {
+    max-width: 1200px;
+    padding: 0 25px 0 25px;
+  }
+
+  .content-left {
+    max-width: 900px;
+  }
+
+  #ghost1,
+  #ghost2 {
+    max-width: 400px;
+    max-height: 420px;
+  }
+  #ghost2 {
+    right: 30px;
+  }
+
+  .buttons {
+    width: 100%;
+    max-width: 440px;
+  }
 }
