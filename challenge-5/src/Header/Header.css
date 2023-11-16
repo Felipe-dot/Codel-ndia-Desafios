@@ -13,6 +13,7 @@
   justify-content: space-between;
   width: 100%;
   max-width: 1600px;
+  transition: ease-in 0.3s;
 }
 
 .social-medias {
@@ -20,6 +21,7 @@
   width: 100%;
   max-width: 300px;
   justify-content: space-evenly;
+  transition: ease-in 0.3s;
 }
 
 .social-medias > img {

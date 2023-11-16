@@ -13,6 +13,7 @@
   height: initial;
   width: 100%;
   max-width: 1600px;
+  transition: ease-in 0.3s;
 }
 
 .content-left {
@@ -332,6 +333,7 @@ button > p > img {
 @media only screen and (min-width: 1200px) {
   .main {
     max-width: 1200px;
+    height: 600px;
     padding: 0 25px 0 25px;
   }
 
